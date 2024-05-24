@@ -42,6 +42,7 @@ select:focus, button:focus{outline: none;}
 
 .handover_wrap .red{color: red}
 .handover_wrap img{max-width: 1000px;}
+.handover_wrap img.sm{max-width: 700px;}
 .handover_wrap button{display: inline-block; padding: 0; cursor: pointer; background: #fff; border: 0 none; text-align: center;}
 .handover_wrap .header{position: fixed; top: 0; width: 100%; padding: 20px; background: #fff; border-bottom: 1px solid #1b1b1b; z-index: 100;}
 .handover_wrap .anchor_list{display: flex; flex-wrap: wrap; gap: 8px;}

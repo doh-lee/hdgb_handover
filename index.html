@@ -16,7 +16,8 @@
         <a href="#anchor3">사이트 URL</a>
         <a href="#anchor4">컨텐츠 업무 (사이트 업데이트 건)</a>
         <a href="#anchor5">UI개발 업무 (신규 개발 건)</a>
-        <a href="#anchor6">운영 매뉴얼</a>
+        <a href="#anchor6">프로젝트 지원 업무</a>
+        <a href="#anchor7">운영 매뉴얼</a>
       </div>
     </div>
     <!-- //header -->
@@ -127,11 +128,11 @@
                   <ol>
                     <li>
                       <p>ⓐ live &amp; preview 공유 날짜 및 에셋 링크 확인 </p>
-                      <img src="./src/img/guide1_1.jpg" alt="">
+                      <img src="./src/img/guide1_1.jpg" alt="" class="sm">
                     </li>
                     <li>
                       <p>ⓑ 쉐어포인트에서 가이드 및 에셋 다운로드</p>
-                      <img src="./src/img/guide1_2.jpg" alt="">
+                      <img src="./src/img/guide1_2.jpg" alt="" class="sm">
                     </li>
                     <li>
                       <p>ⓒ 동영상은 vimeo 링크로 받거나, mp4파일 <a href="#anchor_ftp" title="#FTP 매뉴얼 보기" class="btn_anchor"># FTP 업로드</a> 후 사용 <small>* 현재(24년5월)기준 COS만 mp4로 전달함</small></p>
@@ -226,14 +227,15 @@
               <li>2. 기획서 검토 후 작업 예상 일자 기획자에게 전달 (작업, 테스트, 컨펌기간 포함하여 최소 5일 이상)</li>
               <li>3. <a href="https://hyundaideptgroup.sharepoint.com/:x:/r/sites/e/_layouts/15/doc2.aspx?sourcedoc=%7B053B54F6-AE0B-4240-9377-005FC6907781%7D&file=23.06.%EB%B0%B1%ED%99%94%EC%A0%90.%EB%94%94%EC%A7%80%ED%84%B8%EC%82%AC%EC%97%85%EB%B6%80.e%EB%A7%88%EC%BC%80%ED%8C%85%ED%8C%80.%ED%95%B4%EC%99%B8MD%ED%8D%BC%EB%B8%94%EB%A6%AC%EC%8B%B1%20%EC%9D%BC%EC%A0%95.xlsx&action=default&mobileredirect=true" target="_blank">퍼블리싱 작업 리스트</a> [신규 개발건] 탭에 작업 내용 기입</li>
               <li>4. 퍼블리싱 작업</li>
-              <li>5. official 반영 (dev 반영 → dev 테스트 → stg 반영 → stg 테스트 → master 반영 → master 확인)
+              <li>5. 퍼블리싱 작업물 html 공유</li>
+              <li>6. 브랜드 or 기획자 컨펌</li>
+              <li>7. official 반영 (dev 반영 → dev 테스트 → stg 반영 → stg 테스트 → master 반영 → master 확인)
                 <p class="manual_list">
                   <a href="#anchor_webstorm" title="#webstorm 매뉴얼 보기" class="btn_anchor"># Webstorm 매뉴얼</a>
                   <a href="#anchor_bitbucket" title="#bitbucket & Bamboo 매뉴얼 보기" class="btn_anchor"># Bitbucket &amp; Bamboo 매뉴얼</a>
                 </p>
               </li>
-              <li>6. SIS 반영 (dev 반영 → dev 테스트 → stg 반영 → stg 테스트 → master 반영 → master 확인)</li>
-              <li>7. 퍼블리싱 작업물 html 공유</li>
+              <li>8. SIS 반영 (dev 반영 → dev 테스트 → stg 반영 → stg 테스트 → master 반영 → master 확인)</li>
             </ol>
           </div>
           <!-- //step_box -->
@@ -242,7 +244,58 @@
       </div>
       <!-- //con_box -->
       <div class="con_box">
-        <h2 id="anchor6">운영 매뉴얼</h2>
+        <h2 id="anchor6">프로젝트 지원 업무(리뉴얼 or 구축)</h2>
+        <div class="txt_box">
+          <div class="step_box">
+            <h3>업무 flow</h3>
+            <ol>
+              <li>1. 글로벌 디자인 분석 후 업무 범위 파악</li>
+              <li>2. 퍼블리싱 요청사항 정리 후 수행사 전달 <button type="button" class="btn_toggle">Description</button>
+                <div class="ex_box">
+                  <p>* 퍼블리싱 요청사항 예시</p>
+                  <ul>
+                    <li>&middot; 파일 경로 - 다른 브랜드, 특히 더현대닷컴과 섞이지 않도록 한 폴더 내에 css, js 폴더로 구성 (현재 해외브랜드 폴더 구조 참고)</li>
+                    <li>&middot; css, js 파일 내에 어느 영역의 코드인지 간단하게 주석으로 코멘트 기입</li>
+                    <li>&middot; inline style, !important, tag 선택자 사용 지양</li>
+                    <li>&middot; mediaQuery 분기사이즈: 글로벌사이트 기준, 없을 시 가능한 일정하게 작업</li>
+                    <li>&middot; 페이지 타입별로 컨텐츠 영역 최상단에 class 지정 (예: main, plp, pdp, about, mypage 등)</li>
+                    <li>&middot; 마지막 인수인계 때 사용한 라이브러리, 산출물 폴더구조, 특이사항 등 퍼블리싱 작업 내용 공유
+                      <small>ex) 퍼블리싱 가이드</small>
+                      <img src="./src/img/guide7_1.jpg" alt="" class="sm">
+                    </li>
+                    <li>&middot; 퍼블리싱 마크업리스트 작성 요청
+                      <small>ex) <a href="https://image.thehyundai.com/cos/publist/arket/index.html" target="_blank">ARKET 퍼블리스트</a> </small>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>3. 개발 기간 → 기획 및 수행사 문의사항 대응</li>
+              <li>4. 테스트 기간 <button type="button" class="btn_toggle">Description</button>
+                <div class="ex_box">
+                  <ol>
+                    <li><p>&middot; 전시영역 통합테스트 지원</p>
+                      <small>ex) 테스트관리시스템 TMS </small>
+                      <img src="./src/img/guide7_3.jpg" alt="" class="sm">
+                    </li>
+                    <li><p>&middot; UI퍼블리싱 결함관리</p>
+                      <small>ex) UI 오류 체크리스트</small>
+                      <img src="./src/img/guide7_2.jpg" alt="" class="sm">
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li>5. 오픈 및 안정화 지원 <button type="button" class="btn_toggle">Description</button>
+                <div class="ex_box">
+                  <small>ex) 오픈 전/후 결함 및 개선사항</small>
+                  <img src="./src/img/guide7_4.jpg" alt="" class="sm">
+                </div>
+              </li>
+            </ol>
+          </div>
+          </div>
+      </div>
+      <div class="con_box">
+        <h2 id="anchor7">운영 매뉴얼</h2>
         <div class="txt_box">
           <div class="step_box">
             <div><b id="anchor_ftp"># FTP 매뉴얼</b> <button type="button" class="btn_toggle">Description</button>
@@ -360,26 +413,37 @@
     <!-- //contents -->
   </div>
   <!-- //wrap -->
-  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
   <script>
-    $(function(){
-      setTimeout(function(){
-        let menuH = $('.header').outerHeight();
-        $('.contents').css('margin-top', menuH);
+    setTimeout(function(){
+      let menuH = document.querySelector('.header').offsetHeight;
+      let conEle = document.querySelector('.contents');
+      conEle.style.marginTop = menuH + "px";
 
-        $('.anchor_list > a').each(function(){
-          let anchorPos = $(this).attr('href');
-          $(this).attr('href','javascript:;');
-          $(this).click(function(){
-            $(window).scrollTop($(anchorPos).offset().top - menuH - 10);
-          });
-        });
-          
-        $('.btn_toggle').click(function(){
-          $(this).toggleClass('show');
+      let anchorA = document.querySelectorAll('.anchor_list > a');
+      if(anchorA){
+        anchorA.forEach(function(_ele){
+          _ele.addEventListener('click', function(_evt){
+            _evt.preventDefault();
+            _evt.stopPropagation();
+            let tempTargetST = document.querySelector(this.getAttribute('href')).offsetTop - menuH - 10;
+            document.documentElement.scrollTop = tempTargetST;
+          })
         })
-      }, 50)
-    })
+      }
+
+      let togBtn = document.querySelectorAll('.btn_toggle');
+      if(togBtn){
+        togBtn.forEach(function(_ele){
+          _ele.addEventListener('click', function(){
+            if(_ele.classList.contains('show')){
+              _ele.classList.remove('show');
+            }else{
+              _ele.classList.add('show');
+            }
+          })
+        })
+      }
+    }, 50)
   </script>
 </body>
 </html>
